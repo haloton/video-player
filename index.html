@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scarlett Filtración</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="player-blur"></div>
+        <div class="player">
+            <video id="video" poster="./images/scarlett.jpg" src="./videos/Patricio Estrella En Un Caballito HD.mp4" width="900"></video>
+            <h2 class="player-title">Scarlett Johansson Revista Playboy</h2>
+            <div class="player-overlay">
+                <div class="player-actions">
+                    <button class="button" id="backward" title="Retroceder 10seg" aria-label="Retroceder 10seg" ></button>
+                    <button class="button" id="play" title="Reproducir" aria-label="Reproducir" ></button>
+                    <button class="button" hidden id="pause" title="Pausar" aria-label="Pausar" ></button>
+                    <button class="button" id="forward" title="Adelantar 10seg" aria-label="Adelantar 10 seg" ></button>
+                </div>
+                <div class="player-progress">
+                    <input id="progress" type="range" min="0" value="0" step="1">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+</body>
+</html>
